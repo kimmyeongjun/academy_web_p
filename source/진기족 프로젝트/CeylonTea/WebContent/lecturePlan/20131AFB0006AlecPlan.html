@@ -1,0 +1,261 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<HTML>
+<HEAD>
+<TITLE>강의계획서 작성</TITLE>
+<META http-equiv="content-type" content="text/html; charset=KS_C_5601">
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function checkfield(chfield) {
+  var isNum = true
+
+  if ((chfield.value == null) || (chfield.value == "")) {
+      isNum = false
+      return isNum
+     }
+
+  for (j = 0; j < chfield.value.length; j++) {
+      if ((chfield.value.substring(j, j+1) < "0") ||
+         (chfield.value.substring(j, j+1) > "9")) {
+         isNum=false
+      }
+  }
+  if (isNum == false) {
+    alert("숫자가 아닙니다. 숫자를 입력하여 주시기 바랍니다.")
+     chfield.value = "0"
+     return chfield.value;
+    }
+}
+function checkuniobj01(form) {
+
+     if (form.check01.checked) { form.uniobj01.value = "1";}
+     else { form.uniobj01.value = "0";}
+}
+function checkuniobj02(form) {
+
+     if (form.check02.checked) { form.uniobj02.value = "1";}
+     else { form.uniobj02.value = "0";}
+}
+function checkuniobj03(form) {
+
+     if (form.check03.checked) { form.uniobj03.value = "1";}
+     else { form.uniobj03.value = "0";}
+}
+function checkuniobj04(form) {
+
+     if (form.check04.checked) { form.uniobj04.value = "1";}
+     else { form.uniobj04.value = "0";}
+}
+function checksunsu(form) {
+
+     if (form.csunsu.checked) { form.sunsu.value = "1";}
+     else { form.sunsu.value = "0";}
+}
+//-->
+</SCRIPT>
+</HEAD>
+<BODY background="images/mainback.gif" bgcolor="white" text="black" link="blue" vlink="purple" alink="red">
+<DIV align="center">
+<form METHOD="POST" ACTION="lectureplan_proc.jsp">
+<!--<table border="0" cellpadding="0" cellspacing="0" width="550">-->
+<BR>
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+  <TR>
+      <TD width="550" height="50" background="/professor/img/title.gif">
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <TABLE border="0" width="550">
+            <FONT face="굴림체" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>강의계획서</FONT>
+            <FONT face="굴림체" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>[2013학년도 1학기]</FONT>
+         </TABLE>
+      </TD>
+  </TR>
+</table>
+<BR>
+
+<!-- 교과목 -->
+<table border="1" cellpadding="0" cellspacing="0" width="600">
+  <TR>
+    <TD align="center" valign="middle" colspan="7" bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">직물과 패션소재</FONT></TD>
+  </TR>
+  <TR bgcolor="#DDDDDD">
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">과목번호</FONT></TD>
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">교과구분</FONT></TD>
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">수강대상</FONT></TD>
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">선수과목</FONT></TD>
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">학점</FONT></TD>
+<!--    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">시간</FONT></TD>-->
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">담당교수</FONT></TD>
+  </TR>
+  <TR>
+    <TD align="center"  width="100" bgcolor="#FFF0DD" height="35"><P><FONT face="굴림체" size="2">AFB0006A&nbsp;</FONT></TD>
+    <TD align="center"  width="100" bgcolor="#FFF0DD" height="35"><P><FONT face="굴림체" size="2">전선&nbsp;</FONT></TD>
+    <TD align="center"  width="100" bgcolor="#FFF0DD" height="35"><P><FONT face="굴림체" size="2">2&nbsp;</FONT></TD>
+    <TD align="center"  width="100" bgcolor="#FFF0DD" height="35"><P><FONT face="굴림체" size="2"><input name="csunsu"  onclick="checksunsu(this.form)" type="checkbox"  disabled>선&nbsp;&nbsp;&nbsp;수</FONT></TD>
+    <TD align="center"  width="50" bgcolor="#FFF0DD" height="35"><P><FONT face="굴림체" size="2">3&nbsp;</FONT></TD>
+<!--    <TD align="center"  width="50" bgcolor="#FFF0DD" height="35"><P><FONT face="굴림체" size="2">3&nbsp;</FONT></TD> -->
+    <TD align="center"  width="100" bgcolor="#FFF0DD" height="35"><P><FONT face="굴림체" size="2">정 은 주&nbsp;</FONT></TD>
+  </TR>
+</TABLE>
+
+<P>
+
+</P>
+
+<TABLE BORDER="1" CELLPADING="0" CELLSPACING="0" WIDTH="600">
+  <TR>
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">건학<br>이념</FONT></TD>
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">진리</FONT></TD>
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">지선</FONT></TD>
+  </TR>
+  <TR>
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">대학<br>교육<br>목표</FONT></TD>
+    <TD colspan="2" align="left"  bgcolor="#FFF0DD"><P><FONT face="굴림체" size="2">
+        <P><FONT face="굴림체" size="2"><input name="check01" onclick="checkuniobj01(this.form)" type="checkbox" disabled>다양성과 창의성을 지닌 전문인을 육성한다.<BR>
+
+<input name="check02" type="checkbox" disabled onclick="checkuniobj02(this.form)">공동체 의식과 문화적 소양을 갖춘 사회인을 육성한다.<BR>
+
+<input name="check03" type="checkbox" disabled onclick="checkuniobj03(this.form)">열린사고와 국제경쟁력을 갖춘 세계인을 육성한다.</FONT>
+
+
+  </TR>
+  <TR>
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">핵심가치<br>C.E.N.T.E.R</FONT></TD>
+    <TD colspan="2" align="left"  bgcolor="#FFF0DD" style="padding:5pt;"><P><FONT face="굴림체" size="2">Creative(창의성), Efficient(효율성), Networking(소통능력)<br>Trustful(신뢰성), Energetic(적극성), Ready(준비성) 
+</FONT></TD>
+  </TR>
+  <TR>
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">교과목<br>목표<BR>(한글 1000자)</FONT></TD>
+    <TD colspan="2" align="left"  bgcolor="#FFF0DD" style="padding:5pt;"><P><FONT face="굴림체" size="2">1. 의류학의 체계화 및 전문화<br>2. 인성과 창의력을 갖춘 세계화된 의류인의 양성<br>3. 정보매체를 통한 전공지식의 창조적 재창출</FONT></TD>
+  </TR>
+</TABLE>
+
+<P>
+
+</P>
+
+<table border="1" cellpadding="0" cellspacing="0" width="600">
+  <TR bgcolor="#DDDDDD">
+    <TD align="center" bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">교과목 개요<BR>(한글 1000자)</FONT></TD>
+    <TD align="left" bgcolor="#FFF0DD" style="padding:5pt;"><P><FONT face="굴림체" size="2">20세기 이후 과학기술과 의류소재산업의 발전은 다양한 기능을 갖는 의류의 사용을 가능하게 하였다. 한편 최근 소비자의 감성이 보다 개성화, 다양화 됨에 따라 이에 부응하여 합리적이고 효율적인 의생활을 영위하기 위한 다양한 의복소재에 대한 광범위한 지식이 필요하게 되었다. 이들 소재 중 직물은 의류용, 인테리어용, 산업용 등으로 다양하게 소비되고 있다. 따라서 패션 소재 중 어패렬의 주요 기본 소재인 fabric 중 가장 많이 사용되고 있는 직물, 편성물 등에 대하여 실과 fabric 구성, 실과 fabric의 종류와 기본 개념, fabric의 특성과 그에 따른 용도, fabric 제조과정 등 전반적인 내용을 다뤄 소재에 관한 이해의 폭을 넓힌다.</FONT></TD>
+  </TR>
+
+<!-- 수업방법 -->
+  <TR >
+    <TD align="center" bgcolor="#B3D9CC" width="120" height="35"><P><FONT face="굴림체" size="2">수업방법및<br>사용기자재</FONT></TD>
+    <TD align="center" bgcolor="#FFF0DD"><P>
+       <TABLE width="477" BORDER="1">
+          <TR>
+            <TD align="center"><P><FONT face="굴림체" size="2">이론</FONT></TD>
+            <TD align="center"><P><FONT face="굴림체" size="2">강의
+                <input name="sukwangwi" type="radio" value="Y" checked disabled>Y
+                <input name="sukwangwi" type="radio" value="N"  disabled >N</FONT></TD>
+            <TD align="center"><P><FONT face="굴림체" size="2">세미나
+                <input name="suse" type="radio" value="Y" checked disabled>Y
+                <input name="suse" type="radio" value="N"  disabled >N</FONT></TD>
+            <TD align="center"><P><FONT face="굴림체" size="2">토론식
+                <input name="suto" type="radio" value="Y" checked disabled>Y
+                <input name="suto" type="radio" value="N"  disabled >N</FONT></TD>
+            <TD align="center"><P><FONT face="굴림체" size="2">발표
+                <input name="su_pt" type="radio" value="Y" checked disabled>Y
+                <input name="su_pt" type="radio" value="N"  disabled >N</FONT></TD>
+          </TR>
+          <TR>
+             <TD align="center" rowspan="2"><P><FONT face="굴림체" size="2">실습</FONT></TD>
+             <TD align="center" colspan="4"><P><FONT face="굴림체" size="2">전공실습
+                <input name="susiljun" type="radio" value="Y"  disabled>Y
+                <input name="susiljun" type="radio" value="N" checked disabled>N</FONT></TD>
+           </TR>
+           <TR>
+             <TD align="center" colspan="4"><P><FONT face="굴림체" size="2">전산실습
+                <input name="susiljsan" type="radio" value="Y"  disabled>Y
+                <input name="susiljsan" type="radio" value="N" checked disabled>N</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center"><P><FONT face="굴림체" size="2">구체적<br>방법</FONT></TD>
+                <TD colspan="4" align="left" bgcolor="#FFF0DD" style="padding:5pt;"><P><FONT face="굴림체" size="2">
+                    기본적인 개념과 원리, 용어 등을 강의를 통해 설명하며 이해를 돕기 위하여 많은 그림과 실제 샘플을 제시하여 이해의 폭을 넓힌다. 또한 각종 직물의 샘플과제발표를 통하여 다양한 종류의 fabric의 조직과 촉감, 감성, 용도 등에 관한 이해를 증진시킨다.</FONT></TD>
+          </TR>
+      </TABLE>
+      </TD>
+  </TR>
+  <TR >
+    <TD align="center"  bgcolor="#B3D9CC" width="120" height="35"><P><FONT face="굴림체" size="2">평가요소및비율</FONT></TD>
+    <TD align="center" bgcolor="#FFF0DD">
+        <P><FONT face="굴림체" size="2">출석: </FONT><FONT face="굴림체" size="2">10 %</FONT>&nbsp;&nbsp;&nbsp;
+           <FONT face="굴림체" size="2">과제물: </FONT><FONT face="굴림체" size="2">10 %</FONT>&nbsp;&nbsp;
+           <FONT face="굴림체" size="2">시험: </FONT><FONT face="굴림체" size="2">60 %</FONT>&nbsp;&nbsp;
+           <FONT face="굴림체" size="2">발표: </FONT><FONT face="굴림체" size="2">10 %</FONT>&nbsp;&nbsp;
+           <FONT face="굴림체" size="2">태도: </FONT><FONT face="굴림체" size="2">10 %</FONT></FONT>
+    </TD>
+  </TR>
+  <TR bgcolor="#DDDDDD">
+    <TD align="center" bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">평가방법</FONT></TD>
+    <TD align="left" bgcolor="#FFF0DD" style="padding:5pt;"><P><FONT face="굴림체" size="2">시험, 과제물, 발표, 출석, 태도 등을 종합한 상대평가</FONT></TD>
+  </TR>
+  <TR bgcolor="#DDDDDD">
+    <TD align="center" bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">교재및참고문헌<BR>(한글 1000자)</FONT></TD>
+    <TD colspan="2" align="left" bgcolor="#FFF0DD" style="padding:5pt;"><P><FONT face="굴림체" size="2">1. 섬유와 패션, 정은주 외 공저, 성신여대 출판부<br>2. 패션소재와 봉제, 정은주 외 공저, 교문사<br>3. 21세기를 위한 의류소재의 이론과 실제, 이혜자 외 공저, 형설출판사<br>4. 패션소재론, 공석붕 외 공저, 경춘사</FONT></TD>
+  </TR>
+  <TR bgcolor="#DDDDDD">
+    <TD align="center" bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">수강생참조 및<br>유의사항<BR>(한글 1000자)</FONT></TD>
+    <TD colspan="2" align="left" bgcolor="#FFF0DD" style="padding:5pt;"><P><FONT face="굴림체" size="2">시장조사를 통한 직물샘플의 연구와 발표</FONT></TD>
+  </TR>
+</TABLE>
+<TABLE>
+  <TR>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="kyokwacode" type="hidden" value='AFB0006' size=4></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="hakneando" type="hidden" value='2013' size=4></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="hakgi" type="hidden" value='1' size=1></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="bunban" type="hidden" value='A' size=1></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="hakjum" type="hidden" value=3></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="b1time" type="hidden" value="3"></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="sukwang" type="hidden" value="2"></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="isu" type="hidden" value='12'></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="kyokwaname" type="hidden" value='직물과 패션소재'></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="name" type="hidden" value='정 은 주'></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="mode" type="hidden" value='U'></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="uniobj01" type="hidden" value="0" size=4></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="uniobj02" type="hidden" value="0" size=4></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="uniobj03" type="hidden" value="0" size=4></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="uniobj04" type="hidden" value="0" size=4></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="sunsu" type="hidden" value=" " size=4></FONT></TD>
+  </TR>
+</TABLE>
+</ine -->
+<table border=0 width="600">
+  <tr><td><hr size=1 noshade></td></tr>
+</table>
+
+<!-- Copyrights(C) -->
+<table border=0 width="600">
+    <tr>
+        <td align="center"><p><font face="굴림" size="2">Copyrights(C) 1999,
+            </font><font face="굴림" size="2" color="#004000"><strong>HANSUNG
+            UNIVERSITY</strong></font><font face="굴림" size="2"> All Rights
+            Reserved</font></td>
+    </tr>
+    <tr>
+        <td align="center"><p><font face="굴림" size="2">E-Mail : </font><a href="mailto:webadmin@hansung.ac.kr"><font printf("             face="굴림" size="2">webadmin@hansung.ac.kr</font></a></td>
+    </tr>
+</table>
+</DIV>
+
+<P>&nbsp;</P>
+</body>
+</HTML>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<typeAliases>
+		<!--  <typeAlias  alias="User" type="ac.hansung.spring.vo.UserVO" />-->
+		<typeAlias  alias="Member" type="ac.hansung.spring.vo.MemberVO" />
+		<typeAlias  alias="Lecture" type="ac.hansung.spring.vo.LectureVO" />
+		<typeAlias  alias="EVLecture" type="ac.hansung.spring.vo.EVLectureVO" />
+	</typeAliases>
+
+</configuration>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>강의 평가</title>
+<!-- <link rel="stylesheet" href="./css/mystyle.css"> -->
+
+<link rel="stylesheet" href="./css/bootstrap.css">
+<link rel="stylesheet" href="./css/bootstrap-theme.css">
+<style>
+header {
+	padding: 50px;
+	text-align: center;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-image: url('images/sky.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.tab_item:target {
+	display: block;
+}
+
+.tab_item:not(target) {
+	display: none;
+}
+
+.class-info {
+	width: 90%;
+	text-align: center;
+}
+
+table {
+	text-align: center;
+	verticle-align: middle;
+}
+
+.td_width {
+	width: 300px;
+}
+
+.tb_title {
+	background-color: #8C8C8C;
+}
+</style>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="./js/mystyle.js"></script>
+<script>
+	// 파일명.html#tab1 
+	// 페이지가 로드될때 URI에 hash의 값이 없으면 hash값을 #tab1으로 설정, 
+	// hash값에 따라서 해당 div가 보여지게됨.
+	var vHas = location.hash;
+	if (vHas == "") {
+		location.hash = "#tab1";
+	}
+	//alert(location.hash);
+</script>
+<script>
+	
+</script>
+</head>
+<body>
+	<header>
+		<h2>한성대학교</h2>
+	</header>
+	<section>
+		<article>
+			<table align="center" width="60%">
+				<tr>
+					<td><input type="text" class="form-control"
+						placeholder="Text input"></td>
+					<td width="5px">
+						<button class="btn btn-default" type="submit">Go!</button>
+					</td>
+				</tr>
+			</table>
+			<br>
+		</article>
+		<article>
+			<aside id="main_side">
+				<section>
+
+					<ul class="nav nav-tabs">
+						<li role="presentation"><a href="#tab1">강의평가보기</a></li>
+						<li role="presentation"><a href="#tab2">강의평가작성</a></li>
+					</ul>
+				</section>
+				<section>
+					<br> <br>
+					<div class="tab_item" id="tab1">
+						<table class="class-info" width="90%">
+							<tr>
+								<td><table class="class-info" align="center" width="80%">
+										<tr>
+											<td class="td_width">학생의 00%가 <br>이 강의를 지인에게 <br>추천합니다.
+											</td>
+											<td>
+												<table align="center" class="table">
+													<tr>
+														<td>열정</td>
+														<td><span class="star-input"> <span
+																class="input"> <input type="radio"
+																	name="star-input" id="p1" value="1"><label
+																	for="p1">1</label> <input type="radio"
+																	name="star-input" id="p2" value="2"><label
+																	for="p2">2</label> <input type="radio"
+																	name="star-input" id="p3" value="3"><label
+																	for="p3">3</label> <input type="radio"
+																	name="star-input" id="p4" value="4"><label
+																	for="p4">4</label> <input type="radio"
+																	name="star-input" id="p5" value="5"><label
+																	for="p5">5</label> <input type="radio"
+																	name="star-input" id="p6" value="6"><label
+																	for="p6">6</label> <input type="radio"
+																	name="star-input" id="p7" value="7"><label
+																	for="p7">7</label> <input type="radio"
+																	name="star-input" id="p8" value="8"><label
+																	for="p8">8</label> <input type="radio"
+																	name="star-input" id="p9" value="9"><label
+																	for="p9">9</label> <input type="radio"
+																	name="star-input" id="p10" value="10"><label
+																	for="p10">10</label>
+															</span> <output for="star-input">
+																	<b>0</b>점
+																</output>
+														</span></td>
+													</tr>
+													<tr>
+														<td>전문성</td>
+														<td><span class="star-input1"> <span
+																class="input1"> <input type="radio"
+																	name="star-input1" id="p1" value="1"><label
+																	for="p11">1</label> <input type="radio"
+																	name="star-input1" id="p2" value="2"><label
+																	for="p21">2</label> <input type="radio"
+																	name="star-input1" id="p3" value="3"><label
+																	for="p31">3</label> <input type="radio"
+																	name="star-input1" id="p4" value="4"><label
+																	for="p41">4</label> <input type="radio"
+																	name="star-input1" id="p5" value="5"><label
+																	for="p51">5</label> <input type="radio"
+																	name="star-input1" id="p6" value="6"><label
+																	for="p61">6</label> <input type="radio"
+																	name="star-input1" id="p7" value="7"><label
+																	for="p71">7</label> <input type="radio"
+																	name="star-input1" id="p8" value="8"><label
+																	for="p81">8</label> <input type="radio"
+																	name="star-input1" id="p9" value="9"><label
+																	for="p91">9</label> <input type="radio"
+																	name="star-input1" id="p10" value="10"><label
+																	for="p101">10</label>
+															</span> <output for="star-input1">
+																	<b>0</b>점
+																</output>
+														</span></td>
+													</tr>
+													<tr>
+														<td>융퉁성</td>
+														<td><span class="star-input2"> <span
+																class="input2"> <input type="radio"
+																	name="star-input2" id="p1" value="1"><label
+																	for="p12">1</label> <input type="radio"
+																	name="star-input2" id="p2" value="2"><label
+																	for="p22">2</label> <input type="radio"
+																	name="star-input2" id="p3" value="3"><label
+																	for="p32">3</label> <input type="radio"
+																	name="star-input2" id="p4" value="4"><label
+																	for="p42">4</label> <input type="radio"
+																	name="star-input2" id="p5" value="5"><label
+																	for="p52">5</label> <input type="radio"
+																	name="star-input2" id="p6" value="6"><label
+																	for="p62">6</label> <input type="radio"
+																	name="star-input2" id="p7" value="7"><label
+																	for="p72">7</label> <input type="radio"
+																	name="star-input2" id="p8" value="8"><label
+																	for="p82">8</label> <input type="radio"
+																	name="star-input2" id="p9" value="9"><label
+																	for="p92">9</label> <input type="radio"
+																	name="star-input2" id="p10" value="10"><label
+																	for="p102">10</label>
+															</span> <output for="star-input2">
+																	<b>0</b>점
+																</output>
+														</span></td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2" align="center">
+												<table class="table table-bordered" width="80%"
+													height="150px">
+													<tr>
+														<td class="td_width">아이디</td>
+														<td>abcd1234</td>
+													</tr>
+													<tr>
+														<td>강의난이도</td>
+														<td>상/중/하</td>
+													</tr>
+													<tr>
+														<td>강의수강일자</td>
+														<td>2015.09.13</td>
+													</tr>
+													<tr>
+														<td>강의수강경로</td>
+														<td>종합정보시스템</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<button class="btn btn-default" type="submit">수정</button>
+												&nbsp;&nbsp;&nbsp;
+												<button class="btn btn-default" type="submit">취소</button>
+											</td>
+										</tr>
+									</table></td>
+								<td width="200px">
+									<table class="table" align="center">
+										<tr class="tb_title">
+											<td colspan="2">비슷한 강의</td>
+										</tr>
+										<tr>
+											<td>강의명</td>
+
+										</tr>
+										<tr>
+											<td>강의명</td>
+
+										</tr>
+										<tr>
+											<td>강의명</td>
+
+										</tr>
+									</table>
+								</td>
+							</tr>
+
+						</table>
+
+					</div>
+				</section>
+				<section>
+					<div class="tab_item" id="tab2"></div>
+				</section>
+			</aside>
+		</article>
+	</section>
+</body>
+</html>

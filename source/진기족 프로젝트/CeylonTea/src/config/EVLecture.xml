@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="EVlectureNS">
+	<!-- 내가 입력한 강의평가 글 조회 -->
+	<select id="getMyEvalList" resultType="EVLecture" parameterType="string">
+		select * from evlectures
+		where member_id=#{value}
+	</select>
+
+	<!-- 강의평가 등록 -->
+   <insert id="addEval" parameterType="EVLecture">
+      insert into evlectures values
+      (
+         #{sequence_num},
+         #{member_id},
+         #{passion} , 
+         #{communication}, 
+         #{fairness}, 
+         #{benefit},
+         #{opinion},
+         sysdate 
+      )
+   </insert>
+
+</mapper>
+ 

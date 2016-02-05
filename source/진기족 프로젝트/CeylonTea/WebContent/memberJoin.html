@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description"
+   content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+<meta name="keywords"
+   content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+<meta name="author"
+   content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<title>종합정보시스템 인증 페이지</title>
+<!-- <script src="http://code.jquery.com/jquery.min.js"></script> -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<link rel="stylesheet" href="./css/bootstrap.css">
+
+<link data-href="./css/bootstrap-theme.css" rel="stylesheet"
+   id="bs-theme-stylesheet">
+
+<!-- jQuery library (served from Google) -->
+<!-- bxSlider Javascript file -->
+<script src="./js/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="./css/jquery.bxslider.css" rel="stylesheet" />
+<style>
+html {
+   width: auto;
+   height: 100%;
+   margin: 0px 100px 0px 100px;
+   padding: 0px;
+}
+
+header {
+   padding: 5px 100px;
+}
+
+body {
+   background-size: cover;
+}
+
+.join_table {
+   width: 90%;
+   height: 100%;
+   margin: 0px 70px 0px 70px;
+}
+
+.form-text {
+   width: 400px;
+   height: 300px;
+}
+
+.wrapper {
+   top: 100px;
+   width: 100%;
+   height: 30%;
+   width: 100%;
+}
+
+.join_text {
+   text-align: center;
+   margin: 0px auto 10px auto;
+}
+
+.hansung table {
+   width: 350px;
+   height: 100px;
+}
+
+.hansung input {
+   width: 300px;
+}
+</style>
+<script>
+   $(function() {
+
+      $("#ok_btn").click(function() {
+
+         if ($("#chk").is(":checked") == true) {
+            $("#submitform").attr({
+               action : "certify.do",
+            });
+            alert("인증에 성공하였습니다")
+            $("#submitform").submit();
+
+         } else {
+            alert("이용약관에 동의해 주세요.");
+         }
+      })
+   })
+</script>
+<script type="text/javascript">
+   $(document).ready(function() {
+
+      $('.bxslider').bxSlider({
+         mode : 'horizontal',
+         slideWidth : 600,
+         minSlides : 1,
+         maxSlides : 1,
+         moveSlides : 5,
+         auto : true
+      });
+   });
+</script>
+
+</head>
+<body background="./images/real_background.jpg">
+   <header>
+      <font size="6px" face="HY크리스탈M">한성대학교</font> <font size="3px"
+         face="한컴 바겐세일 B">진기족</font>
+   </header>
+
+   <section>
+      <article>
+         <br> <br> <br>
+         <div class="wrapper">
+            <div class="join_text">
+               <font>회원 가입 이용 약관</font>
+            </div>
+            <div class="join_img">
+               <ul class="bxslider">
+                  <li><a href="http://www.hansung.ac.kr/"><img src="./images/pic1.jpg"></a></li>
+                  <li><a href="http://info.hansung.ac.kr/"><img src="./images/pic2.jpg"></a></li>
+               </ul>
+            </div>
+         </div>
+      </article>
+      <article>
+         <table class="join_table">
+            <tr align="center">
+               <td><br> <textarea class="form-text" disabled>정보통신망법 규정에 따라 한성대학교 강의평가에 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.
+1. 수집하는 개인정보의 항목
+첫째, 회사는 회원가입, 각종 서비스의 제공을 위해 최초 회원가입 당시 아래와 같은 최소한의 개인정보를 필수항목으로 수집하고 있습니다.
+* 회원가입
+- 필수항목 : 아이디, 비밀번호, 이름, 성별
+- 선택항목 : 본인확인 이메일 주소(선택항목은 입력하지 않아도 회원가입이 가능합니다.)
+둘째, 서비스 이용과정이나 사업처리 과정에서 아래와 같은 정보들이 자동으로 생성되어 수집될 수 있습니다.
+- IP Address, 쿠키, 방문 일시, 서비스 이용 기록, 불량 이용 기록, 기기정보
+셋째, 아이디를 이용한 부가 서비스 및 맞춤식 서비스 이용 또는 이벤트 응모 과정에서 해당 서비스의 이용자에 한해서만 개인정보 추가 수집이 발생할 수 있으며, 이러한 경우 별도의 동의를 받습니다.
+2. 개인정보의 수집 및 이용 목적
+가. 서비스 제공에 관한 계약 이행  
+컨텐츠 제공, 특정 맞춤 서비스 제공, 본인인증
+나. 회원관리
+회원제 서비스 제공, 개인식별, 한성대학교 강의평가 이용약관 위반 회원에 대한 이용제한 조치, 서비스의 원활한 운영에 지장을 미치는 행위 및 서비스 부정이용 행위 제재, 가입의사 확인, 가입 및 가입횟수 제한, 추후 법정 대리인 본인확인, 분쟁 조정을 위한 기록보존, 불만처리 등 민원처리, 고지사항 전달, 회원탈퇴의사의 확인
+다. 신규 서비스 개발 및 마케팅에의 활용
+신규 서비스 개발 및 맞춤 서비스 제공, 통계학적 특성에 따른 서비스 제공 , 서비스의 유효성 확인, 이벤트 정보 및 참여기회 제공, 접속빈도 파악, 회원의 서비스 이용에 대한 통계</textarea><br>
+                  <br>
+                  <div class="agree">
+                     <span class="check"> <input type="checkbox" id="chk"
+                        value="agree" aria-label="...">동의합니다.
+                     </span>
+                  </div></td>
+               <td>재학생 인증<br> <br>
+                  <form id="submitform" method="post">
+                     <div class="hansung">
+
+                        <table>
+                           <tr>
+                              <td><font>학번</font></td>
+                              <td><div>
+                                    <input type="number" class="form-control" name="hansung_id"
+                                       id="exampleInputEmail3" placeholder="종합정보시스템 아이디를 입력해주세요.">
+                                 </div></td>
+
+                           </tr>
+                           <tr>
+                              <td>암호</td>
+                              <td><div>
+                                    <input type="password" class="form-control"
+                                       name="hansung_pw" id="exampleInputPassword3"
+                                       placeholder="종합정보시스템 비밀번호를 입력해주세요">
+                                 </div></td>
+                           </tr>
+                        </table>
+                        <br>
+                        <button class="btn btn-default" id="ok_btn">인증</button>
+                     </div>
+                  </form>
+               </td>
+            </tr>
+         </table>
+      </article>
+   </section>
+
+</body>
+</html>

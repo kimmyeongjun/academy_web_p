@@ -1,0 +1,261 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<HTML>
+<HEAD>
+<TITLE>강의계획서 작성</TITLE>
+<META http-equiv="content-type" content="text/html; charset=KS_C_5601">
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function checkfield(chfield) {
+  var isNum = true
+
+  if ((chfield.value == null) || (chfield.value == "")) {
+      isNum = false
+      return isNum
+     }
+
+  for (j = 0; j < chfield.value.length; j++) {
+      if ((chfield.value.substring(j, j+1) < "0") ||
+         (chfield.value.substring(j, j+1) > "9")) {
+         isNum=false
+      }
+  }
+  if (isNum == false) {
+    alert("숫자가 아닙니다. 숫자를 입력하여 주시기 바랍니다.")
+     chfield.value = "0"
+     return chfield.value;
+    }
+}
+function checkuniobj01(form) {
+
+     if (form.check01.checked) { form.uniobj01.value = "1";}
+     else { form.uniobj01.value = "0";}
+}
+function checkuniobj02(form) {
+
+     if (form.check02.checked) { form.uniobj02.value = "1";}
+     else { form.uniobj02.value = "0";}
+}
+function checkuniobj03(form) {
+
+     if (form.check03.checked) { form.uniobj03.value = "1";}
+     else { form.uniobj03.value = "0";}
+}
+function checkuniobj04(form) {
+
+     if (form.check04.checked) { form.uniobj04.value = "1";}
+     else { form.uniobj04.value = "0";}
+}
+function checksunsu(form) {
+
+     if (form.csunsu.checked) { form.sunsu.value = "1";}
+     else { form.sunsu.value = "0";}
+}
+//-->
+</SCRIPT>
+</HEAD>
+<BODY background="images/mainback.gif" bgcolor="white" text="black" link="blue" vlink="purple" alink="red">
+<DIV align="center">
+<form METHOD="POST" ACTION="lectureplan_proc.jsp">
+<!--<table border="0" cellpadding="0" cellspacing="0" width="550">-->
+<BR>
+<table border="0" cellpadding="0" cellspacing="0" width="550">
+  <TR>
+      <TD width="550" height="50" background="/professor/img/title.gif">
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <TABLE border="0" width="550">
+            <FONT face="굴림체" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>강의계획서</FONT>
+            <FONT face="굴림체" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>[2015학년도 1학기]</FONT>
+         </TABLE>
+      </TD>
+  </TR>
+</table>
+<BR>
+
+<!-- 교과목 -->
+<table border="1" cellpadding="0" cellspacing="0" width="600">
+  <TR>
+    <TD align="center" valign="middle" colspan="7" bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">리눅스 시스템</FONT></TD>
+  </TR>
+  <TR bgcolor="#DDDDDD">
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">과목번호</FONT></TD>
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">교과구분</FONT></TD>
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">수강대상</FONT></TD>
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">선수과목</FONT></TD>
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">학점</FONT></TD>
+<!--    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">시간</FONT></TD>-->
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">담당교수</FONT></TD>
+  </TR>
+  <TR>
+    <TD align="center"  width="100" bgcolor="#FFF0DD" height="35"><P><FONT face="굴림체" size="2">ISE0080A&nbsp;</FONT></TD>
+    <TD align="center"  width="100" bgcolor="#FFF0DD" height="35"><P><FONT face="굴림체" size="2">전선&nbsp;</FONT></TD>
+    <TD align="center"  width="100" bgcolor="#FFF0DD" height="35"><P><FONT face="굴림체" size="2">4&nbsp;</FONT></TD>
+    <TD align="center"  width="100" bgcolor="#FFF0DD" height="35"><P><FONT face="굴림체" size="2"><input name="csunsu"  onclick="checksunsu(this.form)" type="checkbox"  disabled>선&nbsp;&nbsp;&nbsp;수</FONT></TD>
+    <TD align="center"  width="50" bgcolor="#FFF0DD" height="35"><P><FONT face="굴림체" size="2">3&nbsp;</FONT></TD>
+<!--    <TD align="center"  width="50" bgcolor="#FFF0DD" height="35"><P><FONT face="굴림체" size="2">3&nbsp;</FONT></TD> -->
+    <TD align="center"  width="100" bgcolor="#FFF0DD" height="35"><P><FONT face="굴림체" size="2">우 재 남&nbsp;</FONT></TD>
+  </TR>
+</TABLE>
+
+<P>
+
+</P>
+
+<TABLE BORDER="1" CELLPADING="0" CELLSPACING="0" WIDTH="600">
+  <TR>
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">건학<br>이념</FONT></TD>
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">진리</FONT></TD>
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">지선</FONT></TD>
+  </TR>
+  <TR>
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">대학<br>교육<br>목표</FONT></TD>
+    <TD colspan="2" align="left"  bgcolor="#FFF0DD"><P><FONT face="굴림체" size="2">
+        <P><FONT face="굴림체" size="2"><input name="check01" onclick="checkuniobj01(this.form)" type="checkbox" disabled>다양성과 창의성을 지닌 전문인을 육성한다.<BR>
+
+<input name="check02" type="checkbox" disabled onclick="checkuniobj02(this.form)">공동체 의식과 문화적 소양을 갖춘 사회인을 육성한다.<BR>
+
+<input name="check03" type="checkbox" disabled onclick="checkuniobj03(this.form)">열린사고와 국제경쟁력을 갖춘 세계인을 육성한다.</FONT>
+
+
+  </TR>
+  <TR>
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">핵심가치<br>C.E.N.T.E.R</FONT></TD>
+    <TD colspan="2" align="left"  bgcolor="#FFF0DD" style="padding:5pt;"><P><FONT face="굴림체" size="2">Creative(창의성), Efficient(효율성), Networking(소통능력)<br>Trustful(신뢰성), Energetic(적극성), Ready(준비성) 
+</FONT></TD>
+  </TR>
+  <TR>
+    <TD align="center"  bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">교과목<br>목표<BR>(한글 1000자)</FONT></TD>
+    <TD colspan="2" align="left"  bgcolor="#FFF0DD" style="padding:5pt;"><P><FONT face="굴림체" size="2">리눅스 시스템에서 운영되는 네트워크 서버를 구축하고, 실무에서 운영되는 환경과 동일하게 운영한다.</FONT></TD>
+  </TR>
+</TABLE>
+
+<P>
+
+</P>
+
+<table border="1" cellpadding="0" cellspacing="0" width="600">
+  <TR bgcolor="#DDDDDD">
+    <TD align="center" bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">교과목 개요<BR>(한글 1000자)</FONT></TD>
+    <TD align="left" bgcolor="#FFF0DD" style="padding:5pt;"><P><FONT face="굴림체" size="2">- Linux 기본 명령어를 배우기 보다는, 실무에서 사용되는 Linux 명령을 위주로 배운다.<br>- Linux 네트워크 서버를 모든 수강생이 직접 구현하게 됨.<br>- 여러대의 서버를 개인별로 직접 운영하게 됨.<br>- 실무 환경과 동일한 서버환경을 구축해서 학습함.</FONT></TD>
+  </TR>
+
+<!-- 수업방법 -->
+  <TR >
+    <TD align="center" bgcolor="#B3D9CC" width="120" height="35"><P><FONT face="굴림체" size="2">수업방법및<br>사용기자재</FONT></TD>
+    <TD align="center" bgcolor="#FFF0DD"><P>
+       <TABLE width="477" BORDER="1">
+          <TR>
+            <TD align="center"><P><FONT face="굴림체" size="2">이론</FONT></TD>
+            <TD align="center"><P><FONT face="굴림체" size="2">강의
+                <input name="sukwangwi" type="radio" value="Y" checked disabled>Y
+                <input name="sukwangwi" type="radio" value="N"  disabled >N</FONT></TD>
+            <TD align="center"><P><FONT face="굴림체" size="2">세미나
+                <input name="suse" type="radio" value="Y"  disabled>Y
+                <input name="suse" type="radio" value="N" checked disabled >N</FONT></TD>
+            <TD align="center"><P><FONT face="굴림체" size="2">토론식
+                <input name="suto" type="radio" value="Y"  disabled>Y
+                <input name="suto" type="radio" value="N" checked disabled >N</FONT></TD>
+            <TD align="center"><P><FONT face="굴림체" size="2">발표
+                <input name="su_pt" type="radio" value="Y" checked disabled>Y
+                <input name="su_pt" type="radio" value="N"  disabled >N</FONT></TD>
+          </TR>
+          <TR>
+             <TD align="center" rowspan="2"><P><FONT face="굴림체" size="2">실습</FONT></TD>
+             <TD align="center" colspan="4"><P><FONT face="굴림체" size="2">전공실습
+                <input name="susiljun" type="radio" value="Y"  disabled>Y
+                <input name="susiljun" type="radio" value="N" checked disabled>N</FONT></TD>
+           </TR>
+           <TR>
+             <TD align="center" colspan="4"><P><FONT face="굴림체" size="2">전산실습
+                <input name="susiljsan" type="radio" value="Y" checked disabled>Y
+                <input name="susiljsan" type="radio" value="N"  disabled>N</FONT></TD>
+          </TR>
+          <TR>
+            <TD align="center"><P><FONT face="굴림체" size="2">구체적<br>방법</FONT></TD>
+                <TD colspan="4" align="left" bgcolor="#FFF0DD" style="padding:5pt;"><P><FONT face="굴림체" size="2">
+                    - Linux 운영체제에 대한 전반적인 개념을 파악한다.<br>- Linux 기본 설치와 네트워크 환경 및 장애복구 환경의 고급 설치를 익힌다.<br>- Linux 네트워크 서버에 개한 개념과 설정/운영 방법을 배운다.<br>- 향후, Linux 서버 운영자로서 역할을 할 수 있는 역량을 배양한다.</FONT></TD>
+          </TR>
+      </TABLE>
+      </TD>
+  </TR>
+  <TR >
+    <TD align="center"  bgcolor="#B3D9CC" width="120" height="35"><P><FONT face="굴림체" size="2">평가요소및비율</FONT></TD>
+    <TD align="center" bgcolor="#FFF0DD">
+        <P><FONT face="굴림체" size="2">출석: </FONT><FONT face="굴림체" size="2">20 %</FONT>&nbsp;&nbsp;&nbsp;
+           <FONT face="굴림체" size="2">과제물: </FONT><FONT face="굴림체" size="2">20 %</FONT>&nbsp;&nbsp;
+           <FONT face="굴림체" size="2">시험: </FONT><FONT face="굴림체" size="2">40 %</FONT>&nbsp;&nbsp;
+           <FONT face="굴림체" size="2">발표: </FONT><FONT face="굴림체" size="2">10 %</FONT>&nbsp;&nbsp;
+           <FONT face="굴림체" size="2">태도: </FONT><FONT face="굴림체" size="2">10 %</FONT></FONT>
+    </TD>
+  </TR>
+  <TR bgcolor="#DDDDDD">
+    <TD align="center" bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">평가방법</FONT></TD>
+    <TD align="left" bgcolor="#FFF0DD" style="padding:5pt;"><P><FONT face="굴림체" size="2">중간, 기말시험 40%<br>출석 20%<br>과제물 20%<br>발표 및 태도 20%</FONT></TD>
+  </TR>
+  <TR bgcolor="#DDDDDD">
+    <TD align="center" bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">교재및참고문헌<BR>(한글 1000자)</FONT></TD>
+    <TD colspan="2" align="left" bgcolor="#FFF0DD" style="padding:5pt;"><P><FONT face="굴림체" size="2">(뇌를 자극하는) Redhat Fedora 리눅스 서버 & 네트워크 <3판>, 우재남, 한빛미디어, 2014년9월</FONT></TD>
+  </TR>
+  <TR bgcolor="#DDDDDD">
+    <TD align="center" bgcolor="#B3D9CC" height="35"><P><FONT face="굴림체" size="2">수강생참조 및<br>유의사항<BR>(한글 1000자)</FONT></TD>
+    <TD colspan="2" align="left" bgcolor="#FFF0DD" style="padding:5pt;"><P><FONT face="굴림체" size="2">- 프로그래밍 실력과 관계없으며, 수업이 어렵지는 않음<br>- 수업을 열심히 듣는 것으로도 충분히 전체를 이해할 수 있음<br>- 실무에서 운영되는 환경과 동일한 수준으로 수업함<br>- 하지만, 결석을 하거나 수업에 소홀히 하면 좋은 성적을 얻기 어려움.</FONT></TD>
+  </TR>
+</TABLE>
+<TABLE>
+  <TR>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="kyokwacode" type="hidden" value='ISE0080' size=4></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="hakneando" type="hidden" value='2015' size=4></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="hakgi" type="hidden" value='1' size=1></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="bunban" type="hidden" value='A' size=1></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="hakjum" type="hidden" value=3></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="b1time" type="hidden" value="3"></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="sukwang" type="hidden" value="4"></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="isu" type="hidden" value='12'></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="kyokwaname" type="hidden" value='리눅스 시스템'></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="name" type="hidden" value='우 재 남'></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="mode" type="hidden" value='U'></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="uniobj01" type="hidden" value="0" size=4></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="uniobj02" type="hidden" value="0" size=4></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="uniobj03" type="hidden" value="0" size=4></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="uniobj04" type="hidden" value="0" size=4></FONT></TD>
+    <TD align="center"  color="#FF8000"><P><FONT size="2"><input name="sunsu" type="hidden" value=" " size=4></FONT></TD>
+  </TR>
+</TABLE>
+</ine -->
+<table border=0 width="600">
+  <tr><td><hr size=1 noshade></td></tr>
+</table>
+
+<!-- Copyrights(C) -->
+<table border=0 width="600">
+    <tr>
+        <td align="center"><p><font face="굴림" size="2">Copyrights(C) 1999,
+            </font><font face="굴림" size="2" color="#004000"><strong>HANSUNG
+            UNIVERSITY</strong></font><font face="굴림" size="2"> All Rights
+            Reserved</font></td>
+    </tr>
+    <tr>
+        <td align="center"><p><font face="굴림" size="2">E-Mail : </font><a href="mailto:webadmin@hansung.ac.kr"><font printf("             face="굴림" size="2">webadmin@hansung.ac.kr</font></a></td>
+    </tr>
+</table>
+</DIV>
+
+<P>&nbsp;</P>
+</body>
+</HTML>
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>한성대 강의평가</title>
+<link rel="stylesheet" href="./css/mystyle.css">
+<link rel="stylesheet" href="./css/bootstrap-theme.css">
+<style>
+html, body {
+   padding: 0;
+   margin: 0;
+}
+
+section {
+   width: 100%;
+   height: 90%;
+   margin: 0px auto;
+   padding: 0px;
+   /*    background-image: url('images/opacity.png'); */
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.login_form {
+   margin: 10px 0px;
+}
+</style>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="./js/mystyle.js"></script>
+</head>
+<body style="overflow-x: hidden; overflow-y: hidden;">
+   <div id="SITE_CONTAINER">
+      <div id="SITE_BACKGROUND" class="siteBackground"
+         data-reactid=".0.$SITE_BACKGROUND"
+         style="position: absolute; top: 0px; width: 1920px;">
+         <div
+            style="position: absolute; top: 0px; height: 100%; width: 100%; opacity: 1;">
+            <div data-quality="1080p"
+               style="position: relative; min-width: 1920px; min-height: 100%; top: 0px;"
+               class="siteBackgroundcurrentVideo" id="SITE_BACKGROUNDcurrentVideo"
+               data-reactid=".0.$SITE_BACKGROUND.$mainPage.1">
+               <video autoplay loop="loop" muted="" preload="auto" width="100%"
+                  height="100%" style="visibility: visible;"
+                  id="SITE_BACKGROUNDcurrentVideovideo"
+                  class="siteBackgroundcurrentVideovideo"
+                  data-reactid=".0.$SITE_BACKGROUND.$mainPage.1.0">
+                  <source
+                     src="http://video.wixstatic.com/video/11062b_ed5fd19d3b3c4a979ecfd7aa035320eb/1080p/mp4/file.mp4"
+                     type="video/mp4" id="SITE_BACKGROUNDcurrentVideomp4"
+                     class="siteBackgroundcurrentVideomp4"
+                     data-reactid=".0.$SITE_BACKGROUND.$mainPage.1.0.0">
+                  <source
+                     src="http://video.wixstatic.com/video/11062b_ed5fd19d3b3c4a979ecfd7aa035320eb/1080p/webm/file.webm"
+                     type="video/webm" id="SITE_BACKGROUNDcurrentVideowebm"
+                     class="siteBackgroundcurrentVideowebm"
+                     data-reactid=".0.$SITE_BACKGROUND.$mainPage.1.0.1">
+               </video>
+            </div>
+         </div>
+      </div>
+      <div class="SITE_ROOT" id="SITE_ROOT" data-reactid=".0.$SITE_ROOT"
+         style="width: 1920px; padding-bottom: 41px;">
+         <div id="SITE_STRUCTURE" class="intro_body"
+            style="width: 1920px; position: static; top: 0px;">
+            <header class="title">
+               <h2>
+                  <font color="white" size="6px" face="나눔바른고딕">한성대학교</font> <font
+                     color="white" size="3px" face="나눔바른고딕">진기족</font>
+               </h2>
+            </header>
+            <section>
+               <article>
+                  <div class="mainArt" id="mainForm">
+                     <div class="mainContent" data-center="bottom: 100px; opacity: 1"
+                        data-top="opacity: 0">
+                        <h2>
+                           <font face="나눔바른고딕">강의평가</font>
+                        </h2>
+                        <!--                         <h3> -->
+                        <!--                            <font face="나눔바른고딕" size="4px">문구를 입력해주세요.</font> -->
+                        <!--                         </h3> -->
+                        <div class="login_form">
+                           <a class="main_btn" id="login_btn"><span>로그인</span> <i>Go!</i></a>
+                           <a href="memberJoin.html" class="main_btn"><span>회원가입</span>
+                              <i>Join!</i></a>
+
+                        </div>
+                     </div>
+                  </div>
+               </article>
+               <article>
+                  <div class="mainLogin" id="mainLogin">
+                     <br> <br> <br>
+                     <h2>
+                        <font face="나눔바른고딕">로그인</font>
+                     </h2>
+                     <form action="login.do" method="post">
+                        <table>
+                           <tr>
+                              <td><div>
+                                    <input type="text" class="form-control" name="member_id"
+                                       id="exampleInputEmail3" placeholder="ID">
+                                 </div></td>
+                              <td rowspan="2"><input type="submit"
+                                 class="btn btn-default" value="로그인"></td>
+                           </tr>
+                           <tr>
+                              <td><div>
+                                    <input type="password" class="form-control" name="member_pw"
+                                       id="exampleInputPassword3" placeholder="Password">
+                                 </div></td>
+                           </tr>
+                        </table>
+                     </form>
+                     <br> <br> <br> <br> <br> <br> <br>
+                     <br> <br> <br> <br> <br> <br> <br>
+                     <br>
+                  </div>
+
+               </article>
+               <!--                <article> -->
+               <!--                   <div class="table_bg"> -->
+               <!--                      <table align="center"> -->
+               <!--                         <tbody> -->
+               <!--                            <tr> -->
+               <!--                               <td width="200px"><img class="character" -->
+               <!--                                  src="./images/a.jpg"></td> -->
+               <!--                               <td width="200px"><img class="character" -->
+               <!--                                  src="./images/b.png"></td> -->
+               <!--                               <td width="200px"><img class="character" -->
+               <!--                                  src="./images/c.png"></td> -->
+               <!--                               <td width="200px"><img class="character" -->
+               <!--                                  src="./images/d.jpg"></td> -->
+               <!--                            </tr> -->
+               <!--                            <tr> -->
+               <!--                               <td><font face="Cooper Std">COPYWRITER</font></td> -->
+               <!--                               <td><font face="Cooper Std">CREATIVE<br>DIRECTOR -->
+               <!--                               </font></td> -->
+               <!--                               <td><font face="Cooper Std">CLIENT<br>MANAGER -->
+               <!--                               </font></td> -->
+               <!--                               <td><font face="Cooper Std">PROJECT<br>MANAGER -->
+               <!--                               </font></td> -->
+               <!--                            </tr> -->
+               <!--                         </tbody> -->
+               <!--                      </table> -->
+               <!--                   </div> -->
+               <!--                </article> -->
+            </section>
+
+         </div>
+      </div>
+   </div>
+</body>
+</html>
